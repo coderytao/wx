@@ -1,0 +1,28 @@
+<!--pages/search-music/search.wxml-->
+<van-search value="{{ search }}"  shape="round"   placeholder="请输入搜索关键词"  bind:click-input="onsearch" bindchange="handchage" bind:search="handSearch" /> 
+<area-header title="热们搜索" text=" ">
+
+</area-header>
+<!--展示歌名-->
+<view class="hot-search" >
+   <block wx:for="{{searchinput}}" wx:if="{{!show.length&&!result.length}}" >
+     <view class="search-hots" bindtap="hotsearch" data-item="{{item}}">
+       {{item.first}}
+     </view>
+   </block>
+</view>
+<!--展示搜索歌名-->
+<block wx:for="{{show}}" :key="type" wx:if="{{!show.length&&result.length}}" >
+  <view class="showlist" bindtap="onhandclick" data-item="{{item}}" >
+   {{item.keyword}}
+  
+  </view>
+  
+</block>
+<!--展示歌曲-->
+<block wx:for="{{result}}" :key="id" wx:if="{{result.length}}" >
+  <view class="display">
+    {{item.name}}
+  </view> 
+ 
+</block>

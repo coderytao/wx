@@ -1,0 +1,28 @@
+<!--component/navigation-bar/navigation-bar.wxml-->
+<!--component/navigation-bar/navigation-bar.wxml-->
+<view class="navbar">
+  <view class="status" style="height:{{globar}}px">
+    
+  </view>
+  <view class="navbar-01">
+    <view class="left">
+      <view class="slot">
+      <slot name="left"></slot>
+     </view>
+      <view class="left-arrow">
+        <image src="../../img/back.png" class="image" mode="widthFix"></image>
+      </view>
+     
+    </view>
+    
+    <view class="center">
+      <view class="center-slot">
+        <slot name="center"></slot>
+      </view>
+      <view class="center-text">
+        <text>歌曲</text>
+      </view>
+    </view>
+    
+  </view>
+</view>

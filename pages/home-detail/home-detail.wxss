@@ -1,0 +1,63 @@
+/* pages/home-detail/home-detail.wxss */
+page{
+  padding: 0 30rpx;
+  box-sizing: border-box;
+  
+}
+.rank{
+ display: flex;
+}
+.number ,image{
+  padding:15px 0px;
+}
+image{
+  width:20px;
+  height: 20px;
+  margin-left:100px;
+}
+.detail-ranking-list-01{
+  font-weight: 600;
+}
+.detail-ranking-list-02{
+  margin-top:8px;
+  color:gold;
+  font-size: 12px;
+  
+}
+.content{
+  
+  flex:1;
+  flex-wrap: wrap;
+  padding-left:20px;
+}
+/*.display{
+  display: inline-block;
+}
+.detail-text{
+  margin-top:10px;
+}
+.rank{
+ margin-left:40px;
+ margin-top:0px;
+}
+.detail-ranking-list-01{
+  font-weight: 800;
+}
+.detail-ranking-list-02{
+  padding-top:10px;
+  font-size: 12px;
+  color: rgb(182, 155, 121);
+ 
+}
+
+.number{
+ line-height: 40px;
+
+}
+ image{
+  width: 20px;
+  height: 20px;
+  margin:10px 200px;
+  
+  
+}*/

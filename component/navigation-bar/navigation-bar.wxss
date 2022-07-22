@@ -1,0 +1,41 @@
+/* component/navigation-bar/navigation-bar.wxss */
+
+.navbar-01{
+  display: flex;
+  height:44px;
+  text-align: center;
+}
+.left .left-arrow .image{
+  width: 15px;
+  height: 15px;
+  display: block;
+  margin:35px 35px;
+}
+/*slot没有东西的时候,展示left-arrow*/
+.slot:empty+.left-arrow{
+  display: block;
+}
+.left-arrow{
+  display: none;
+}
+.center-slot:empty+.center-text{
+  display: block;
+}
+.center-text{
+  display: none;
+}
+/*默认情况下为none*/
+
+.left,.right{
+  width: 100px;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.center{
+  flex:1;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+
+}

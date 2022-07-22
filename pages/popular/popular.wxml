@@ -1,0 +1,27 @@
+<!--pages/popular/popular.wxml-->
+<!--pages/home-detail/home-detail.wxml-->
+<view class="detail-title">
+    <area-header title="民谣" text=" " >
+      
+    </area-header>
+    <view class="detail-text">
+      
+      <block wx:for="{{de}}" :key="id" >
+       <view class="number">
+         {{index+1}}
+       </view>
+       <view class="rank">
+       <view class="detail-ranking-list-01" :key="id">
+       {{item.name}}
+       </view>
+       <view class="detail-ranking-list-02">
+{{item.ar[0].name}}
+        
+       </view>
+      <image src="../../img/play.png"></image>
+      
+      </view>
+      </block>
+     
+    </view>
+</view>

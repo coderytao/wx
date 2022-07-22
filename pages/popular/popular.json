@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "home-detail":"../home-detail/home-detail"
+  }
+}

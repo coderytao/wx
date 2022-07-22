@@ -1,0 +1,44 @@
+<!--pages/music-play/music-play.wxml-->
+<!--背景-->  
+<view class="ui-image">
+    <image mode="aspectFill" src="{{songs.al.picUrl}}">
+    </image>
+  </view>
+  <view class="bg-cover">
+  </view>
+<!--导航栏-->
+<navigation-bar > 
+  <view class="slot" slot="center">
+   <text class="{{currentPage===0 ? 'active':' ' }}">歌曲</text>
+   <text   class="detail-slot">详情</text>
+  </view>
+</navigation-bar>
+<!--轮播图-->
+<swiper class="content" style="height:{{current}}px" bindchange="handSwiperChange">
+  <!--轮播图一--> 
+  <swiper-item class="music">
+  <view class="music-image">
+     <image src="{{songs.al.picUrl}}" class="swiper-image"></image>
+  </view>
+  <view class="line">
+    <view class="line-text">
+       <text >{{songs.name}}</text>
+       <text >{{songs.ar[0].name}}</text>
+       <text >{{songs.ar[1].name}}</text>
+    </view>
+    <view class="slide">
+      <slider bindchange="slider1change"  value="{{slidevalue}}" left-icon="cancel" right-icon="success_no_circle" block-size="14"min="7" bindchange="onslider"/>
+    </view>
+    <view class="video">
+      <image src="../../img/top.png" mode="widthFix" class="top"></image>
+      <view class="pause" bindtap="pause">
+      <image src="../../img/video02.png"   class="video-image" ></image>
+    </view>
+      <image src="../../img/next01.png" mode="widthFix" class="next"></image>
+    </view>
+  </view>
+ 
+  </swiper-item>
+  <swiper-item class="lyric"></swiper-item>
+
+</swiper>

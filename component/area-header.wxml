@@ -1,0 +1,16 @@
+<!--component/area-header.wxml-->
+<view class="header-text" bindtap="onhandmore" >
+   <view class="header-line">
+    {{title}}
+   </view>
+   <!--插槽这里只预留一个显示-->
+   <view class="slot">
+     <slot></slot>
+   </view>
+    <view class="header-right" >
+    {{text}}
+   </view>
+   
+   
+</view>
+

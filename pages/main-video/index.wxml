@@ -1,0 +1,20 @@
+<!--pages/main-video/index.wxml-->
+<wxs src="../../utils/format.wxs" module="tools"></wxs>
+<wxs src="../../utils/format.wxs" module="second"></wxs>
+<view class="video">
+  <block wx:for="{{array}}" wx:key="id"  >
+    <view class="item">
+      <view class="album"  bindtap="click" data-item="{{item}}"><!--data这里可以传递id-->
+        <image class="image" src="{{item.cover}}" mode="widthFix" >
+        </image>
+        <view class="info">
+          <view class="count">{{tools.frommat(item.playCount)}}</view>
+          <view class="second">{{second.hours(item.mv.videos[0].duration)}}</view>
+        </view>
+      </view>
+      <view class="text"> {{item.name}}-{{item.artistName}}</view>
+     
+    </view>
+  </block>
+</view>
+

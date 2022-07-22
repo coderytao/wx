@@ -1,0 +1,38 @@
+{
+  "pages": [
+   
+    "pages/home-music/index",
+    "pages/music-play/music-play",
+    "pages/home-detail/home-detail",
+    "pages/main-video/index",
+    "pages/main-detail/main-detail",
+    "pages/search-music/search",
+    "component/orgin",
+    "pages/popular/popular",
+    "component/navigation-bar/navigation-bar"
+  ],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home-music/index",
+        "iconPath": "./img/video1.png",
+        "text": "视频",
+        "selectedIconPath": "./img/music.png"
+      },
+      {
+        "pagePath": "pages/main-video/index",
+        "text": "音乐",
+        "iconPath": "./img/music1.png",
+        "selectedIconPath": "./img/video.png"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

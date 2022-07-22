@@ -1,0 +1,42 @@
+<wxs src="../../utils/format.wxs" module="num"></wxs>
+<block class="video">
+  <video class="firstvideo" custom-cache="{{false}}" src="{{getline.url }}" 	certificate-url="true">
+  </video>
+    <view class="second">
+       <view class="second-item">
+         {{get.desc}}
+       </view>
+       <view class="second-descript">
+         {{get.artistName}}
+       </view>
+    </view>
+    <view class="video-con">
+        {{num.frommat(get.duration)}}-{{get.publishTime}}
+      </view>
+     
+  </block>
+  
+  <block wx:for="{{getmv}}" wx:key="id">  
+   
+          <view class="line">
+              
+            
+              <image src="{{item.coverUrl}}"  mode="widthFix" class="line-get" >
+              </image>
+            
+           
+              <view class="get-text">
+                {{item.title}}
+              </view>
+              <view class="get-juben">
+                {{item.creator[0].userName}}
+              </view>
+          </view>
+       
+            <view class="get-line">
+              {{num.frommat(item.durationms)}}
+            </view>
+
+  </block>
+
+

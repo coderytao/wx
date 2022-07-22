@@ -1,0 +1,24 @@
+function frommat(count){
+  var counter=parseInt(count)
+  if(counter>10000){
+    return  counter=(counter/10000).toFixed(1)+'万次播放'
+  }
+  else {
+   return  counter=(counter/10000).toFixed(1)+'千'
+  }
+}
+function hours(second){
+  var second=parseInt(second)/1000
+  var mitueTime=0;
+  var hourTime=0;
+  
+    mitueTime=Math.floor(second/60)//9
+    hourTime=Math.floor(second%60)//0
+     return mitueTime+":"+hourTime
+  
+ 
+}
+module.exports={
+  frommat:frommat,
+  hours:hours
+}

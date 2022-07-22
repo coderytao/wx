@@ -1,0 +1,21 @@
+/* component/area-header.wxss */
+.header-text{
+  display: flex;
+  justify-content: space-between;
+}
+/*这里设置slot表示显示那个组件*/
+.header-text .slot:empty+.header-right{
+    display: flex;
+}
+.header-text .header-right{
+  display: none;
+  align-content: center;
+}
+/*   上面两个*/
+.header-line{
+  font-weight: 700;
+  font-size: 16px;
+}
+.header-right{
+  font-size: 12px;
+}

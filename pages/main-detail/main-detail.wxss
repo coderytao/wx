@@ -1,0 +1,78 @@
+/* pages/main-detail/main-detail.wxss */
+.firstvideo{
+  width: 100%;
+}
+.second{
+  display: flex;
+  flex-wrap: wrap;
+  margin:10px 15px;
+}
+.second-item {
+  font-size: 16px;
+  font-family: "华文隶书";
+  font-weight: 200;
+}
+
+.second-descript{
+  margin-top:5px;
+  
+}
+.second-descript,.video-con{
+  font-size: 10px;
+  color:DarkSlateGray;
+}
+.video-con{
+  margin:5px 15px;
+ 
+}
+
+.page-section-spacing{
+  margin-top: 60rpx;
+}
+.scroll-view_H{
+  white-space: nowrap;
+}
+.scroll-view-item{
+  height: 300rpx;
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width: 100%;
+  height: 300rpx;
+}
+
+
+.line{
+  
+ display:block;
+ position: relative;
+ margin-left:15px;
+}
+.line-get{
+ width: 200px;
+  border-radius: 10px;
+}
+.image{
+  width: 100px;
+  height: 200px;
+}
+.get-line{
+margin-left:120px;
+
+color: goldenrod;
+}
+.get-text{
+  font-size: 16px;
+ position: absolute;
+  font-weight: 700;
+  top:10px;
+  left:210px;
+}
+.get-juben{
+  position: absolute;
+  font-weight: 700;
+  font-size: 13px;
+  color: aqua;
+  left:210px;
+  top:98px;
+}

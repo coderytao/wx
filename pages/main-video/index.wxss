@@ -1,0 +1,35 @@
+/* pages/main-video/index.wxss */
+.video{
+  display: flex;
+  flex-wrap:wrap;/*换行*/
+  justify-content: space-around;/*间距*/
+}
+.image{
+  border-radius: 8px;
+  width: 100%;
+}
+
+.album{
+  overflow: hidden;
+  margin-bottom:10px;
+  position: relative;
+}
+.item{
+  width: 49%;/*占据为48%*/
+ margin-bottom:30px;
+}
+.info{
+  display: flex;
+  justify-content: space-between;
+  color:white;
+  margin:-25px auto 16px;
+  font-family: "kaiti";
+  
+  font-size: 16px;
+}
+.text{
+  font-size: 14px;
+  color: red;
+margin: -20px 10px;
+  font-family: "kaiti";
+}

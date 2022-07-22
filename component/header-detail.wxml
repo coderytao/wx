@@ -1,0 +1,17 @@
+<!--component/header-detail.wxml-->
+<area-header title="{{title}}" >
+
+</area-header>
+<view class="page-section-spacing"  >
+        <scroll-view class="scroll-view-x"  scroll-x="true" bindscroll="scroll" style="width: 100%">
+      <block wx:for="{{item}}" wx:key="id" >
+      <view class="list-content" bindtap="onhand" data-item="{{item}}">
+      <image src="{{item.coverImgUrl}}" class="list"></image>
+      <view class="content">
+        {{item.name}}
+      </view>
+     </view>
+      </block>
+        </scroll-view>
+      </view>
+

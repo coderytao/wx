@@ -1,0 +1,15 @@
+<!--component/orgin.wxml-->
+
+<view class="leftlist">
+  <image src="{{coverimg}}" class="myimage"></image>
+  <view class="ght">
+  <view class="right-li">
+    {{li}}
+  </view>
+  <block wx:for="{{left}}" :key="id">
+  <view class="you">
+    {{item.al.name}}
+  </view>
+   </block>
+   </view>
+</view>

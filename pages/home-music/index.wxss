@@ -1,0 +1,72 @@
+/* pages/home-music/index.wxss */
+/*这里设置page的距离*/
+page{
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  
+}
+.van-search__content{
+  background-color:#fafafa;
+}
+.swiper{
+  margin-left:20px;
+}
+.swiper-image{
+  
+}
+.swiper-item ,image{
+  width: 100%;
+  border-radius: 10px;
+}
+.hello{
+  
+  display: flex;
+ justify-content: space-between;
+  
+}
+.hello .image{
+  width: 60px;
+
+  height: 60px;
+  border-radius: 10px;
+  
+}
+.text,.line{
+  font-size: 13px;
+  
+  padding-top:10px;
+  font-weight: 700;
+}
+.hello{
+  margin-top: 10px;
+  flex:1;
+}
+.right{
+  width:20px;
+  height: 20px;
+  margin-top:15px;
+}
+.leftlist{
+  width: 100%;
+  display: flex;
+  
+}
+.myimage{
+  width: 100px;
+  height: 100px;
+}
+.ght{
+ margin:4px 40px;
+ 
+}
+.right-li{
+  font-size: 20px;
+  font-weight: 700;
+ 
+}
+.you{
+  margin-top:5px;
+  font-size: 13px;
+  color:gray;
+}
+

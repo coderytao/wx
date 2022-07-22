@@ -1,0 +1,51 @@
+<!--pages/home-music/index.wxml-->
+
+<van-search value="{{ value }}" shape="round" placeholder="请输入搜索关键词"  bind:click-input="onsearch" disabled /> 
+<swiper  autoplay="{{true}}" 	indicator-dots="{{true}}" 	indicator-active-color="red">
+  <block wx:for="{{getsearch}}">
+    <swiper-item> 
+         <image src="{{item.imageUrl}}" mode="widthFix" bindload="image" class="swiper-image"></image>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!--详情列表-->
+<area-header :title="{{title}}" >
+
+</area-header>
+<!--推荐歌曲-->
+<block wx:for="{{getlist}}" :key="id" >
+  <view class="hello" bindtap="onhandmore" data-item="{{item}}" >
+  <image src="{{item.al.picUrl}}" mode="widthFix" class="image"></image>
+  <view class="text">
+  {{item.name}}
+  </view>
+  <image src="../../img/right.png" class="right"></image>
+  </view>
+</block>
+<!--推荐榜单-->
+<header-detail item="{{recommend}}"  >
+ 
+</header-detail>
+
+<!--热门歌单-->
+<header-detail item="{{secondlist}}"  >
+ 
+</header-detail>
+<!--原创榜-->
+<view class="leftlist" >
+  <image src="{{coverimg}}" class="myimage"></image>
+  <view class="ght">
+  <view class="right-li">
+    {{li}}
+  </view>
+  <block wx:for="{{left}}" :key="id">
+  <view class="you">
+    {{item.al.name}}
+  </view>
+   </block>
+   </view>
+</view>
+
+
+
